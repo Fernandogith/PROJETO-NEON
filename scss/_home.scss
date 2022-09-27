@@ -403,6 +403,9 @@
                 }
             }
         }
+        @include responsive(1200px) {
+            
+        }
     }
 }
 

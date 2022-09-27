@@ -15,6 +15,12 @@ img {
 
 html {
     font-size: 62.5%;              // Transformando o tamanho padrão de font para 10px
+    @include responsive(1300px) {
+        font-size: 58%;
+    }
+    @include responsive (991px) {
+        font-size: 62.5%;
+    }
 }
 
 html,

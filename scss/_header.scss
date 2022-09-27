@@ -8,10 +8,10 @@ header {
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
     background-color: rgba(10, 10, 153, 0.76);
 
-
     .container {
         @include flex(row, center, space-between)
     }
+
     nav {
         display: flex;
         align-items: center;
@@ -38,10 +38,13 @@ header {
         }
 
     }
+
     .btn-mobile {
         display: none;
         margin-left: 4rem;
     }
+
+    // Responsividade
     @include responsive (1085px) {
         nav {
             ul {
@@ -54,6 +57,7 @@ header {
             }
         }
     }
+
     @include responsive (991px) {
         .logo {
             max-width: 10.8rem;
@@ -67,6 +71,7 @@ header {
             display: block;
         }
     }
+
     @include responsive (480px) {
         height: 7.3rem;
         nav {
